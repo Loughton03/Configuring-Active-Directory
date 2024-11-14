@@ -1,4 +1,4 @@
-<p align="center">
+![image](https://github.com/user-attachments/assets/cc9758d6-c6cc-4276-8945-bae756a94f93)<p align="center">
 <img src="https://i.imgur.com/ouRvZVR.png" alt="logo"/>
 </p>
 
@@ -29,7 +29,7 @@ This lab builds upon the previous Active Directory setup by configuring it furth
 </p>
 
 <p>
-With Active Directory Users and Computers open on the domain controller, I created two Organizational Units (OUs) named _EMPLOYEES and _ADMINS under the domain “ernestotest.com.” This naming convention is helpful for future PowerShell scripting. I then created a new user, Jane Doe, in the _ADMINS OU and assigned her administrative privileges by adding her to the Domain Admins security group. From then on, I switched to Jane’s account for administrative tasks.
+With Active Directory Users and Computers open on the domain controller, I created two Organizational Units (OUs) named _EMPLOYEES and _ADMINS under the domain “mydomain.com.” This naming convention is helpful for future PowerShell scripting. I then created a new user, Jane Doe, in the _ADMINS OU and assigned her administrative privileges by adding her to the Domain Admins security group. From then on, I switched to Jane’s account for administrative tasks.
 </p>
 
 <p>
@@ -52,7 +52,7 @@ Before the client can join the domain, I configured its DNS to point to the doma
 </p>
 
 <p>
-On the client VM, I went to System settings, selected “Rename this PC (advanced),” and clicked “Change.” I entered the domain name and Jane’s credentials in PLEASECHANGE.com\jane_admin. After joining the domain, the client appeared in the Active Directory Users and Computers panel under Computers.
+On the client VM, I went to System settings, selected “Rename this PC (advanced),” and clicked “Change.” I entered the domain name and Jane’s credentials in mydomain.com\jane_admin. After joining the domain, the client appeared in the Active Directory Users and Computers panel under Computers.
 </p>
 
 <p>
@@ -76,11 +76,11 @@ I used a PowerShell script to generate multiple users at once to streamline user
 </p>
 
 <p>
-<img src="" height="80%" width="80%" alt="place-holder"/>
+<img src="https://i.imgur.com/W7WtEMe.png" height="80%" width="80%" alt="generated-user-login"/>
 </p>
 
 <p>
-After creating the users, I verified the setup by logging into the client VM with one of the new users. I selected a user (e.g., PLEASECHANGE.com\bon.rovej) and confirmed a successful login under the domain context.
+After creating the users, I verified the setup by logging into the client VM with one of the new users. I selected a user (e.g., mydomain.com\tek.hive) and confirmed a successful login under the domain context.
 </p>
 
 <h2>Lessons Learned</h2>
