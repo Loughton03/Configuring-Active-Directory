@@ -21,10 +21,10 @@ This lab builds upon the previous Active Directory setup by configuring it furth
 <h2>Configuration Steps</h2>
 
 <p></p>
-<img src="" height="80%" width="80%" alt="place-holder"/>
+<img src="https://i.imgur.com/czmxq5V.png" height="80%" width="80%" alt="created-new-admin"/>
 
 <p></p>
-<img src="" height="80%" width="80%" alt="place-holder"/>
+<img src="https://i.imgur.com/UYoiYoR.png" height="80%" width="80%" alt="creating-member-admin-member"/>
 
 <p>
 With Active Directory Users and Computers open on the domain controller, I created two Organizational Units (OUs) named _EMPLOYEES and _ADMINS under the domain “ernestotest.com.” This naming convention is helpful for future PowerShell scripting. I then created a new user, Jane Doe, in the _ADMINS OU and assigned her administrative privileges by adding her to the Domain Admins security group. From then on, I switched to Jane’s account for administrative tasks.
@@ -38,7 +38,7 @@ Before the client can join the domain, I configured its DNS to point to the doma
 </p>
 
 <p></p>
-<img src="" height="80%" width="80%" alt="place-holder"/>
+<img src="https://i.imgur.com/VOzDzZ2.png" height="80%" width="80%" alt="place-holder"/>
 
 <p></p>
 <img src="" height="80%" width="80%" alt="place-holder"/>
